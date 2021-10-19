@@ -162,8 +162,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="First to comment on this photo! :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-gJ-cSu">
-                                            <rect key="frame" x="75" y="8" width="331" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First to comment on this photo! :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwy-gJ-cSu">
+                                            <rect key="frame" x="84" y="8" width="322" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -183,6 +183,29 @@
                                     <outlet property="commentLabel" destination="hwy-gJ-cSu" id="9t7-uq-EZR"/>
                                     <outlet property="nameLabel" destination="ZrJ-mU-Sg2" id="8J7-aC-7LC"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="addCommentCell" rowHeight="33" id="ulk-97-C5D">
+                                <rect key="frame" x="0.0" y="452.5" width="414" height="33"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ulk-97-C5D" id="ues-sk-fvk">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOv-Ba-xND">
+                                            <rect key="frame" x="8" y="8" width="134" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fOv-Ba-xND" firstAttribute="top" secondItem="ues-sk-fvk" secondAttribute="top" constant="8" id="Rg2-RP-cY3"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fOv-Ba-xND" secondAttribute="bottom" constant="8" id="fKA-4p-rui"/>
+                                        <constraint firstItem="fOv-Ba-xND" firstAttribute="leading" secondItem="ues-sk-fvk" secondAttribute="leading" constant="8" id="ffa-r1-IH5"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fOv-Ba-xND" secondAttribute="trailing" constant="8" id="wV5-1i-nAF"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.90713595360824739" green="0.90713595360824739" blue="0.90713595360824739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
